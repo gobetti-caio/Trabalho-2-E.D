@@ -18,14 +18,7 @@ Vector *visitados_construct(int size)
     return visitados;
 };
 
-/**
- * Função criada para pegar os vizinhos de um determinado nó
- * que está sendo visitado, ela checa se esse vizinho já foi viitado
- * se não foi adiciona no vetor de vizinhos
- * @param visited vetor de booleano
- * @param nodes vetor de nós que vieram do Problem
- * @param source valor do nó de origem
- */
+
 Vector *neighborhood(Vector *visited, Vector *nodes, int source)
 {
     Vector *neighbors = vector_construct();
@@ -46,11 +39,7 @@ Vector *neighborhood(Vector *visited, Vector *nodes, int source)
     return neighbors;
 }
 
-/**
- * Função criada para checar se o vetor de visitados ainda
- * tem algum que não foi visitado
- * @param visited vetor de visitados
- */
+
 bool visited_check(Vector *visited)
 {
     int size = vector_size(visited);
