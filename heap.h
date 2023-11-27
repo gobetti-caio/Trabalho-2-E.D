@@ -1,14 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 typedef void *data_type;
 
-typedef struct heap heap;
+typedef struct Heap Heap;
 
-heap *heap_construct();
+Heap *heap_construct();
 
-void heap_push(heap *h, void *data, int priority);
+void heap_push(Heap *h, void *data, int priority);
 
-bool heap_empty(heap *h);
+bool heap_empty(Heap *h);
 
-void *heap_pop(heap *h);
+void *heap_pop(Heap *h);
 
-void heap_destroy(heap* h);
+void heap_destroy(Heap* h);
 
