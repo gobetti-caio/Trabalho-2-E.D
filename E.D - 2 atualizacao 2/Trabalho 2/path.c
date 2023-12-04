@@ -16,7 +16,7 @@ Vector *paths_construct(int size)
 
     for (int i = 0; i < size; i++)
     {
-        PossiblePaths *pn = problem_node_construct(0, i, 0);
+        PossiblePaths *pn = possible_paths_construct(0, i, 0);
         vector_push_back(paths, pn);
     }
     return paths;

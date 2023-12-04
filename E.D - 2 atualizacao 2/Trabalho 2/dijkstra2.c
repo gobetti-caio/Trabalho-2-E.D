@@ -106,8 +106,7 @@ Vector *solve_dijkstra(Problem *problem)// check
     Heap *not_visited = heap_construct();
 
     PossiblePaths *node_removed;
-    PossiblePaths *origin = problem_node_construct(0, 0, 0); // nó de origem
-    bool was_visited = true;
+    PossiblePaths *origin = possible_paths_construct(0, 0, 0); // nó de origem
 
     heap_push(not_visited, origin, origin->origin_distance); // consertar a heap
 

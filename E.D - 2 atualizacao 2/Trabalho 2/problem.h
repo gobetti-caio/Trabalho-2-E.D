@@ -18,10 +18,9 @@ typedef struct Problem
 
 Problem *read_file(FILE *arq);
 
-PossiblePaths *possivlepathsnodes_construct(int index, int previous, int previous_distance);
+PossiblePaths *possible_paths_construct(int index, int previous, int previous_distance);
 
 void problem_destroy(Problem *p);
 
-void *poblemnode_destroy (PossiblePaths *p);
 
 
